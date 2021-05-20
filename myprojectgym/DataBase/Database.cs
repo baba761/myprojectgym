@@ -11,10 +11,11 @@ namespace myprojectgym.DataBase
     {
         private readonly IConfiguration _configuration;
 
-        public Database(IConfiguration configuration)
+        public Database(IConfiguration configuration) 
         {
             _configuration = configuration;
         }
+        //this is only for test
         //public string InsertData(Customer objcust)
         //{
         //    string result = "";
