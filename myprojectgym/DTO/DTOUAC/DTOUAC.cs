@@ -58,5 +58,6 @@ namespace myprojectgym.DTO.DTOUAC
     public class DTOGetPages
     {
         public string uid { get; set; }
+        public string tst { get; set; }
     }
 }
