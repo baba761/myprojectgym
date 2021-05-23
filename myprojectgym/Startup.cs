@@ -12,6 +12,7 @@ using Microsoft.Extensions.Logging;
 using myprojectgym.DAL.CountryDAL;
 using myprojectgym.DAL.DALGym;
 using myprojectgym.DAL.DALNotification;
+using myprojectgym.DAL.DALRegistration;
 using myprojectgym.DAL.UACDAL;
 using myprojectgym.DTO.DTOGYM;
 using myprojectgym.DTO.DTONotification;
@@ -43,6 +44,7 @@ namespace myprojectgym
             //option.AddDefaultPolicy(
             //    builder => { } );
             services.AddScoped<IDALUAC, DALUAC>();
+            services.AddScoped<IDALRegistration, DALRegistration>();
             services.AddScoped<IDALGym, DALGym>();
             services.AddScoped<Isqlhelper, sqlhelper>();
             services.AddScoped<ICountryDAL, CountryDAL>();
